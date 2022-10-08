@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <Button
+            android:text="BONJOUR"
+            android:layout_width="410dp"
+            android:layout_height="52dp"
+            android:id="@+id/buttonBonjour"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:background="#f29a02"
+            android:textColor="#4527A0" app:layout_constraintHorizontal_bias="1.0"
+    />
+    <Button
+            android:text="Calcul long"
+            android:layout_width="412dp"
+            android:layout_height="48dp"
+            android:id="@+id/buttonCalculLong"
+            android:background="#969696"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0" app:layout_constraintTop_toBottomOf="@+id/buttonDernierePhoto"/>
+
+    <Button
+            android:text="Dernière photo"
+            android:layout_width="410dp"
+            android:layout_height="52dp"
+            android:id="@+id/buttonDernierePhoto"
+            android:background="#E84545"
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0" app:layout_constraintTop_toBottomOf="@+id/buttonPhoto"/>
+    <Button
+            android:text="CHRONOMETRE"
+            android:layout_width="410dp"
+            android:layout_height="52dp"
+            android:id="@+id/buttonChrono"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" style="@style/Widget.AppCompat.Button.Colored"
+            android:background="#24ad59"
+            android:textColor="#263238" app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintTop_toBottomOf="@+id/buttonCalculLong"/>
+    <Button
+            android:text="PHOTO"
+            android:layout_width="410dp"
+            android:layout_height="52dp"
+            android:id="@+id/buttonPhoto"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:background="#375bb8"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintTop_toBottomOf="@+id/buttonBonjour"/>
+    <ImageView
+            android:layout_width="406dp"
+            android:layout_height="257dp"
+            android:id="@+id/imageView"
+            android:background="#A0A0A0"
+            android:textColor="#000000"
+
+
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    <Button
+            android:text="METEO"
+            android:layout_width="410dp"
+            android:layout_height="52dp"
+            android:id="@+id/buttonMeteo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:background="#FFEB3B"
+            android:textColor="#000000"
+            app:layout_constraintTop_toBottomOf="@+id/buttonChrono"/>
+    <Button
+            android:text="CONTACTS"
+            android:layout_width="410dp"
+            android:layout_height="52dp"
+            android:id="@+id/buttonContacts"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:background="#9C27B0"
+            android:textColor="#FFD740"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintTop_toBottomOf="@+id/buttonMeteo"/>
+    <Button
+            android:text="ACCELEROMETRE"
+            android:layout_width="410dp"
+            android:layout_height="52dp"
+            android:id="@+id/buttonAccelerometre"
+            android:background="#00BCD4"
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Widget.AppCompat.Button.Colored"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintTop_toBottomOf="@+id/buttonContacts"/>
+    <Button
+            android:text="Select"
+            android:layout_width="410dp"
+            android:layout_height="52dp"
+            android:id="@+id/buttonSelect"
+            android:background="#FF7189"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/buttonAccelerometre"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintVertical_bias="0.0"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
